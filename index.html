@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary 1 st Our Story</title>
+
+    <link rel="stylesheet" href="source/style.css">
+    <link rel="icon" href="asset/webkit/icon.gif" type="image/gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Previous HTML remains the same until sticky-note -->
+    <div class="landing-page" id="landing-page">
+        <img src="https://feeldreams.github.io/pandaputih.gif" alt="Cow Character">
+        <button id="start-btn">💝</button>
+        <p>Sentuh LOVEnya!</p>
+    </div>
+
+    <!-- Anniversary Header -->
+    <div class="anniversary-header">
+        <span class="header-hearts heart-left">💝</span>
+        <h1 class="header-title">Happy Anniversary</h1>
+        <p class="header-subtitle">Our Love Story Continues...</p>
+        <span class="header-hearts heart-right">💝</span>
+    </div>
+
+
+    <div id="typing-page">
+        <img src="asset/webkit/heart_1.png" class="heart-decor heart-left" alt="Heart Left">
+        <img src="asset/webkit/heart_1.png" class="heart-decor heart-right" alt="Heart Right">
+
+        <div id="sticky-note" class="animate__animated animate__zoomIn animate__delay-1s">
+            <!-- Added decorative corners -->
+            <span class="corner-heart top-left">❤️</span>
+            <span class="corner-heart top-right">❤️</span>
+            <span class="corner-heart bottom-left">❤️</span>
+            <span class="corner-heart bottom-right">❤️</span>
+            <p id="typing-text"></p>
+            <img id="envelope" class="animate__animated animate__bounceIn" src="asset/webkit/cute.png" alt="Envelope">
+            
+            <div class="photo-album" id="photo-album">
+                <h1 class="header-title-2">Our memories</h1>
+                <div class="album-grid">
+                    <div class="album-cover" onclick="openAlbum(1)">
+                        <img src="asset/cover/Alun-Alun.png" alt="Album 1">
+                        <div class="album-title">Alun-alun Kidul</div>
+                    </div>
+                    <div class="album-cover" onclick="openAlbum(2)">
+                        <img src="asset/cover/Chundai.png" alt="Album 2">
+                        <div class="album-title">Chundai</div>
+                    </div>
+                    <div class="album-cover" onclick="openAlbum(3)">
+                        <img src="asset/cover/Hamzah.png" alt="Album 3">
+                        <div class="album-title">Hamzah Resto</div>
+                    </div>
+                    <div class="album-cover" onclick="openAlbum(4)">
+                        <img src="asset/cover/Jalan.png" alt="Album 4">
+                        <div class="album-title">Jalan Pagi</div>
+                    </div>
+                    <div class="album-cover" onclick="openAlbum(5)">
+                        <img src="asset/cover/Museum.png" alt="Album 5">
+                        <div class="album-title">Museum Vandemberg</div>
+                    </div>
+                    <div class="album-cover" onclick="openAlbum(6)">
+                        <img src="asset/cover/Natal.png" alt="Album 6">
+                        <div class="album-title">Natal 2024</div>
+                    </div>
+                    <div class="album-cover" onclick="openAlbum(7)">
+                        <img src="asset/cover/Ngandong.png" alt="Album 7">
+                        <div class="album-title">Pantai Ngandong</div>
+                    </div>
+                    <div class="album-cover" onclick="openAlbum(8)">
+                        <img src="asset/cover/Photobox.png" alt="Album 8">
+                        <div class="album-title">Photo Box</div>
+                    </div>
+                    <div class="album-cover" onclick="openAlbum(9)">
+                        <img src="asset/cover/NanamiaPizzeria.png" alt="Album 9">
+                        <div class="album-title">Nanamia Pizzeria</div>
+                    </div>
+                    <div class="album-cover" onclick="openAlbum(10)">
+                        <img src="asset/cover/Solaria.png" alt="Album 10">
+                        <div class="album-title">Solaria Ambarukmo</div>
+                    </div>
+                    <div class="album-cover" onclick="openAlbum(11)">
+                        <img src="asset/cover/WaroengSteak.png" alt="Album 11">
+                        <div class="album-title">Waroeng Steak</div>
+                    </div>
+                    <div class="album-cover" onclick="openAlbum(12)">
+                        <img src="asset/cover/Lovememories.png" alt="Album 12">
+                        <div class="album-title">Love Memories</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="album-modal" id="album-modal">
+            <div class="album-content">
+                <button class="close-album" onclick="closeAlbum()">×</button>
+                <img id="current-photo" src="" alt="Album Photo" style="width: 100%;">
+                <div class="album-navigation">
+                    <button class="nav-btn" onclick="prevPhoto()">❮</button>
+                    <button class="nav-btn" onclick="nextPhoto()">❯</button>
+                </div>
+                <div class="photo-counter" id="photo-counter"></div>
+            </div>
+        </div>
+
+        <!-- Added floating hearts -->
+        <div class="floating-heart" style="left: 10%; bottom: 5%; animation-delay: 1s;">❤️</div>
+        <div class="floating-heart" style="left: 50%; bottom: 5%; animation-delay: 1s;">❤️</div>
+        <div class="floating-heart" style="left: 90%; bottom: 5%; animation-delay: 1s;">❤️</div>
+
+
+        <div class="footer-text">© ahmad ganteng</div>
+    </div>
+    
+
+    <div id="video-popup">
+        <button id="close-video">Close</button>
+        <iframe src="https://www.youtube.com/embed/Echuokgc90Q" allowfullscreen></iframe>
+    </div>
+
+
+    <!-- Rest of the HTML and Script remains the same -->
+    <audio id="bg-music" loop>
+        <source src="asset//webkit/lagu_fix.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="source/script.js"></script>
+     
+</body>
+</html>
