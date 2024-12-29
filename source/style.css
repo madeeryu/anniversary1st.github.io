@@ -16,7 +16,7 @@
     .anniversary-header {
         display: none; /* Mulai tersembunyi */
         position: fixed;
-        top: 10%;
+        top: 5%;
         left: 0;
         right: 0;
         z-index: 1000;
@@ -368,7 +368,7 @@
     }
 
     .album-navigation {
-        position: absolute;
+        position: relative;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -388,6 +388,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute; /* Posisi absolut untuk mengatur tombol navigasi */
+        top: 50%; /* Vertikal sejajar dengan tengah gambar */
+        transform: translateY(-50%); /* Koreksi posisi vertikal */
+    }
+    .nav-btn:first-of-type { /* Tombol kiri */
+        left: 0%; /* Jarak dari sisi kiri */
+    }
+    
+    .nav-btn:last-of-type { /* Tombol kanan */
+        right: 10%; /* Jarak dari sisi kanan */
     }
 
     .nav-btn:disabled {
