@@ -12,7 +12,7 @@
 
 Agustus 2023, kita mulai dari layar kecil—chat sederhana yang lama-lama penuh tawa dan makna. Lima bulan berlalu, dan perasaan ini makin tidak bisa dibohongi.
 
-"Kamu seperti jawaban yang diberikan semesta," rasa ku pada waktu itu. Di awal Januari 2024, Kita memutuskan untuk melangkah lebih dekat, meski jarak masih jadi batas. Hari itu, 5 Januari, resmi menjadi milik kita—awal kisah yang lebih dari sekadar angka.
+"Kamu seperti jawaban yang diberikan semesta," rasa ku pada waktu itu. Di awal Januari 2024, Kita memutuskan untuk melangkah lebih dekat, meski jarak masih menjadi batas untuk kita. Hari itu, 5 Januari, resmi menjadi milik kita—awal kisah yang lebih dari sekadar angka.
 
 Lalu waktu terus berjalan. Meski belum bertemu, aku belajar mencintaimu lewat suaramu, tawamu, bahkan keheningan di antaranya. Dan akhirnya, pada bulan Agustus 2024, jarak dan waktu telah sirna, ketika dunia kita yang berbeda kini dipertemukan. Semua rasa yang dulu terjaga di layar kini nyata di depan mata.
 
