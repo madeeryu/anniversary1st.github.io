@@ -87,7 +87,7 @@ function startTypingAnimation() {
         4: Array.from({length: 7}, (_, i) => `asset/kenangan/Jalan_pagi/photo (${i + 1}).jpg`),
         5: Array.from({length: 1}, (_, i) => `asset/kenangan/Museum_Vandemberg/photo (${i + 1}).jpg`),
         6: Array.from({length: 8}, (_, i) => `asset/kenangan/Natal/photo (${i + 1}).jpg`),
-        7: Array.from({length: 25}, (_, i) => `asset/kenangan/P_Ngandong/photo (${i + 1}).jpg`),
+        7: Array.from({length: 25}, (_, i) => `../asset/kenangan/P_Ngandong/photo (${i + 1}).jpg`),
         8: Array.from({length: 8}, (_, i) => `asset/kenangan/PhotoBox/photo (${i + 1}).JPG`),
         9: Array.from({length: 3}, (_, i) => `asset/kenangan/Pizza/photo (${i + 1}).jpg`),
         10: Array.from({length: 5}, (_, i) => `asset/kenangan/Solaria/photo (${i + 1}).jpg`),
