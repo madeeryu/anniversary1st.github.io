@@ -193,12 +193,23 @@
         left: 0%;
     }
     
-    .corner-heart {
-        position: absolute;
+    .corner-heart-1 {
+        position: fixed;
         font-size: 28px;
         color: #ff69b4;
         filter: drop-shadow(0 2px 4px rgba(255,105,180,0.3));
         animation: heartbeat 1.5s infinite;
+        top: 2%;
+        right: 8%;
+    }
+    .corner-heart-2 {
+        position: fixed;
+        font-size: 28px;
+        color: #ff69b4;
+        filter: drop-shadow(0 2px 4px rgba(255,105,180,0.3));
+        animation: heartbeat 1.5s infinite;
+        top: 2%;
+        left: 8%;
     }
     
     @keyframes heartbeat {
