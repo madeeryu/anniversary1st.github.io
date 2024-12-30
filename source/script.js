@@ -54,8 +54,8 @@ function startTypingAnimation() {
             typingPage.style.display = 'flex'; // Tampilkan halaman berikutnya
 
             // Tampilkan header dengan animasi fadeInUp
-            header.style.display = 'block'; // Ubah display agar terlihat
-            header.classList.add('animate__animated', 'animate__fadeInUp');
+            // header.style.display = 'block'; // Ubah display agar terlihat
+            // header.classList.add('animate__animated', 'animate__fadeInUp');
 
             // Tampilkan sticky note setelah header selesai
             setTimeout(() => {
@@ -68,13 +68,13 @@ function startTypingAnimation() {
 
     envelope.addEventListener('click', () => {
         videoPopup.style.display = 'flex';
-        header.style.display = 'none';
+        // header.style.display = 'none';
         bgMusic.pause();
     });
     
     closeVideo.addEventListener('click', () => {
         videoPopup.style.display = 'none';
-        header.style.display = 'block';
+        // header.style.display = 'block';
         bgMusic.play();
     });
 
@@ -120,12 +120,12 @@ function startTypingAnimation() {
         currentPhotoIndex = 0;
         updatePhoto();
         document.getElementById('album-modal').style.display = 'flex';
-        header.style.display = 'none';
+        // header.style.display = 'none';
     }
 
     function closeAlbum() {
         document.getElementById('album-modal').style.display = 'none';
-        header.style.display = 'block';
+        // header.style.display = 'block';
     }
 
     function updatePhoto() {

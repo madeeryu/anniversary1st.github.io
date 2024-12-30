@@ -51,6 +51,14 @@
         margin: 5px 0 0;
         color: #fff;
     }
+    .header-subtitle-2 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.2em;
+        margin: 5px 0 0 0;
+        color: #000000;
+        position: relative;
+        left: 10%;
+    }
 
     .header-hearts {
         position: absolute;
@@ -99,76 +107,165 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 50vh;
         position: relative;
-        background: linear-gradient(135deg, rgba(255,192,203,0.2) 0%, rgba(255,182,193,0.2) 100%);
+        background: linear-gradient(135deg, rgba(255,192,203,0.3) 0%, rgba(255,182,193,0.3) 100%);
+        padding: 10px 20px;
     }
-
-    /* Enhanced sticky note styling */
+    
     #sticky-note {
         background: linear-gradient(to bottom right, #fff8f8, #fff0f0);
-        width: 70%;
-        max-width: 500px;
-        height: 500px;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        max-width: 700px;
+        min-height: 300px;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         position: relative;
         font-size: 18px;
         line-height: 1.8;
         text-align: justify;
         overflow-y: auto;
-        scrollbar-width: thin;
-        scrollbar-color: #ffb6c1 #fff0f0;
-        border: 2px solid #ffe4e1;
+        border: 3px solid rgba(255, 182, 193, 0.5);
         margin-top: 120px;
+        transition: transform 0.3s ease;
     }
-
-    #sticky-note::-webkit-scrollbar {
-        width: 8px;
+    
+    #sticky-note:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     }
-
-    #sticky-note::-webkit-scrollbar-track {
-        background: #fff0f0;
-        border-radius: 4px;
-    }
-
-    #sticky-note::-webkit-scrollbar-thumb {
-        background: #ffb6c1;
-        border-radius: 4px;
-    }
-
-    #sticky-note::-webkit-scrollbar-thumb:hover {
-        background: #ff69b4;
-    }
-
+    
     #sticky-note::before {
-        content: "❤️ Our Story ❤️";
+        content: "❤️ Our Love Story ❤️";
         position: absolute;
-        top: -40px;
+        top: -45px;
         left: 50%;
         transform: translateX(-50%);
-        width: 200px;
-        height: 30px;
+        width: 250px;
+        height: 40px;
         background: linear-gradient(45deg, #ff69b4, #ffb6c1);
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: "Afacad Flux", serif;
-        font-size: 24px;
+        font-family: "Great Vibes", cursive;
+        font-size: 28px;
         color: white;
         padding: 5px 0;
     }
-
+    
     #typing-text {
         color: #4a4a4a;
         white-space: pre-line;
         font-family: "Afacad Flux", serif;
-        font-size: 22px;
+        font-size: 20px;
+        line-height: 1.8;
         position: relative;
         padding: 5px;
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
+        word-spacing: normal;
+        letter-spacing: 0.3px;
+    }
+    
+    .header-title-2 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 3em;
+        margin: 0 0 20px 0;
+        color: #ff69b4;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        letter-spacing: 2px;
+    }
+    
+    .header-subtitle-2 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5em;
+        margin: 0 0 30px 0;
+        color: #ff69b4;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 1px;
+        position: relative;
+        left: 0%;
+    }
+    
+    .corner-heart {
+        position: absolute;
+        font-size: 28px;
+        color: #ff69b4;
+        filter: drop-shadow(0 2px 4px rgba(255,105,180,0.3));
+        animation: heartbeat 1.5s infinite;
+    }
+    
+    @keyframes heartbeat {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .top-left { top: 15px; left: 15px; }
+    .top-right { top: 15px; right: 15px; }
+    .bottom-left { bottom: 15px; left: 15px; }
+    .bottom-right { bottom: 15px; right: 15px; }
+    
+    /* Decorative elements */
+    .corner-line {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #ff69b4;
+        opacity: 0.5;
+    }
+    
+    .top-left {
+        top: 10px;
+        left: 10px;
+        border-bottom: none;
+        border-right: none;
+    }
+    
+    .top-right {
+        top: 10px;
+        right: 10px;
+        border-bottom: none;
+        border-left: none;
+    }
+    
+    .bottom-left {
+        bottom: 10px;
+        left: 10px;
+        border-top: none;
+        border-right: none;
+    }
+    
+    .bottom-right {
+        bottom: 10px;
+        right: 10px;
+        border-top: none;
+        border-left: none;
+    }
+    
+    /* Scrollbar styling */
+    #sticky-note::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    #sticky-note::-webkit-scrollbar-track {
+        background: #fff0f0;
+        border-radius: 4px;
+    }
+    
+    #sticky-note::-webkit-scrollbar-thumb {
+        background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+        border-radius: 4px;
+    }
+    
+    #sticky-note::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(45deg, #ff1493, #ff69b4);
     }
 
     /* Added decorative elements */
